@@ -1,5 +1,3 @@
-require("nvim-lsp-installer").setup {}
-
 local default_config = require("plugins.configs.lspconfig")
 
 require("lspconfig").tsserver.setup {
