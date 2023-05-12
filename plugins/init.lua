@@ -18,6 +18,14 @@ local plugins = {
 
       return opts
     end
+  },
+  {
+    "nvim-tree/nvim-tree.lua",
+    opts = function()
+      local opts = require "plugins.configs.nvimtree"
+      opts.view.adaptive_size = true
+      return opts
+    end
   }
 }
 
