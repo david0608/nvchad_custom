@@ -11,7 +11,7 @@ local plugins = {
     opts = function()
       local opts = require "plugins.configs.treesitter"
 
-      local ll = { "vim", "tsx", "python", "rust" }
+      local ll = { "vim", "tsx", "python", "rust", "cpp" }
       for _, l in ipairs(ll) do
         table.insert(opts.ensure_installed, l)
       end
