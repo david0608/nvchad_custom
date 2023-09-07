@@ -20,6 +20,6 @@ require("lspconfig").arduino_language_server.setup {
   cmd = {
     'arduino-language-server',
     '-cli-config', '~/arduino-cli.yaml',
-    '-fqbn', 'arduino:avr:nano'
+    '-fqbn', 'rp2040:rp2040:rpipico'
   }
 }
