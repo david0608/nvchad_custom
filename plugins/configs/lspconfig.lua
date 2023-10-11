@@ -21,5 +21,9 @@ require("lspconfig").arduino_language_server.setup {
     'arduino-language-server',
     '-cli-config', '~/arduino-cli.yaml',
     '-fqbn', 'rp2040:rp2040:rpipico'
+  },
+  filetypes = {
+    'arduino',
+    'cpp'
   }
 }
