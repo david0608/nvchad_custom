@@ -13,6 +13,10 @@ require("lspconfig").rust_analyzer.setup {
 require("lspconfig").clangd.setup {
   on_attach = default_config.on_attach,
   -- capabilities = default_config.capabilities,
+  cmd = {
+    'clangd',
+    '-query-driver', '/usr/bin/arm-none-eabi-g*'
+  }
 }
 
 require("lspconfig").arduino_language_server.setup {
