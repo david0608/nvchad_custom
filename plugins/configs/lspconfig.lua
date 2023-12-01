@@ -30,7 +30,7 @@ else
     -- capabilities = default_config.capabilities,
     cmd = {
       'clangd',
-      '-query-driver', '/usr/bin/arm-none-eabi-g*'
+      '-query-driver', '/usr/bin/arm-none-eabi-g*,/usr/local/bin/arm-none-eabi-g*'
     }
   }
 end
