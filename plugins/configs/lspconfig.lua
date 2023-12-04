@@ -16,8 +16,8 @@ then
     on_attach = default_config.on_attach,
     cmd = {
       'arduino-language-server',
-      '-cli-config', '~/arduino-cli.yaml',
-      '-fqbn', 'rp2040:rp2040:rpipico'
+      '-cli-config', vim.g.custom_arduino_cli_config_path,
+      '-fqbn', vim.g.custom_arduino_fqbn
     },
     filetypes = {
       'arduino',
