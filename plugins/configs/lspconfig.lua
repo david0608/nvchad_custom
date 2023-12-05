@@ -17,7 +17,7 @@ then
     cmd = {
       'arduino-language-server',
       '-cli-config', vim.g.custom_arduino_cli_config_path,
-      '-fqbn', vim.g.custom_arduino_fqbn
+      '-fqbn', vim.g.custom_arduino_board
     },
     filetypes = {
       'arduino',
